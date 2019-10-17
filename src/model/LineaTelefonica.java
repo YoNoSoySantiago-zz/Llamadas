@@ -5,6 +5,19 @@ public class LineaTelefonica{
 	private ArrayList<LineaCelular> celulares = new ArrayList<LineaCelular>();
 	private ArrayList<LineaVozIP> vozIPs = new ArrayList<LineaVozIP>();
 
+	public void addBasica(int duracionLlamadaLocal){
+		LineaBasica basica = new LineaBasica(duracionLlamadaLocal);
+		basicas.add(basica);
+	}
+	public void addCelular(int duracionLlamadaLocal, int duracionLlamadaCelular){
+		LineaCelular celular = new LineaCelular(duracionLlamadaLocal,duracionLlamadaCelular);
+		celulares.add(celular);
+	}
+	public void addVozIP(int duracionLlamadaLocal, int duracionLlamadaCelular, int duracionLlamadaInternacional){
+		LineaVozIP vozIP = new LineaVozIP(duracionLlamadaLocal, duracionLlamadaCelular, duracionLlamadaInternacional);
+		vozIPs.add(vozIP);
+	}
+
 	public int calcularCostos(){
 		int result=0;
 		for(int i = 0; i<basicas.size();i++){
