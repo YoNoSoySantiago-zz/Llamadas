@@ -27,7 +27,7 @@ public class LineaTelefonica{
 			result += celulares.get(i).getDuracionLlamadaLocal()*35;
 			result += celulares.get(i).getDuracionLlamadaCelular()*10;
 		}
-		for(int i = 0; i<celulares.size();i++){
+		for(int i = 0; i<vozIPs.size();i++){
 			result += vozIPs.get(i).getDuracionLlamadaLocal()*35;
 			result += vozIPs.get(i).getDuracionLlamadaCelular()*7;
 			result += vozIPs.get(i).getDuracionLlamadaCelular()*80;
