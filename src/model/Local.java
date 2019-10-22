@@ -1,7 +1,7 @@
 package model;
 public abstract class Local{
 	private int duracionLlamadaLocal;
-	public Local(int localDurattionCall){
+	public Local(int duracionLlamadaLocal){
 		this.duracionLlamadaLocal = duracionLlamadaLocal;
 	}
 	public int getDuracionLlamadaLocal(){
